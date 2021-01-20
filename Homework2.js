@@ -185,7 +185,7 @@ for (let hour = 0; hour < 3; hour++) {
     for (let second = 0; second < 60; second++) {
       console.log(hour, minute, second);
       document.write(`${hour}:${minute}:${second} <br>`);
-      //continue;
+
       if (hour == 2 && minute == 0 && second == 0) {
         break;
       }
