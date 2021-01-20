@@ -180,14 +180,22 @@
 // }
 
 //Task 22 - Відтворити роботу годинника, відрахувавши  2 години  (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
-// for (let hour = 0; hour < 2; hour++) {
-//   for (let minute = 0; minute < 60; minute++) {
-//     for (let second = 0; second < 60; second++) {
-//       console.log(hour, minute, second);
-//       document.write(`${hour}:${minute}:${second} <br>`);
-//     }
-//   }
-// }
+for (let hour = 0; hour < 3; hour++) {
+  for (let minute = 0; minute < 60; minute++) {
+    for (let second = 0; second < 60; second++) {
+      console.log(hour, minute, second);
+      document.write(`${hour}:${minute}:${second} <br>`);
+      //continue;
+      if (hour == 2 && minute == 0 && second == 0) {
+        break;
+      }
+    }
+
+    if (hour == 2 && minute == 0) {
+      break;
+    }
+  }
+}
 
 //Task extra - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 // let mEx = ["l", "i", "m", "e"];
